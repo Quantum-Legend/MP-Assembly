@@ -1,9 +1,9 @@
-section .data
+SECTION .data
     msg1: db 'Hello World! Welcome to the world of Microprocessors',0xA
     len1 equ $-msg1
 
-section .text
-    global _start
+SECTION .text
+    GLOBAL _start
     _start:
     MOV eax,1
     MOV ebx,1
