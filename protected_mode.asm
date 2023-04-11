@@ -53,8 +53,6 @@ SECTION .text
 			
 			prmode:
 				DISP pmsg,pmsg_len
-			
-			nxt1:
 				SGDT [gdt]
 				SLDT [ldt]
 				SIDT [idt]
