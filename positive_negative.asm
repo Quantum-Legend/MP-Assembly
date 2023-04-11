@@ -1,4 +1,4 @@
-section .data
+SECTION .data
     ncnt db 0
     pcnt db 0
     array: dw 80H,-4CH,3FH
@@ -12,11 +12,11 @@ section .data
     msg3: db 0xA
     len3 equ $-msg3
 
-section .bss
+SECTION .bss
     buff resb 02
 
-section .text
-    global _start
+SECTION .text
+    GLOBAL _start
     _start:
         MOV rsi,array
         MOV rcx,03
